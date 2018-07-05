@@ -1,0 +1,37 @@
+.logo {
+    display: none;
+}
+
+.carousel-inner {
+    z-index: 0;
+}
+
+.carousel-item {
+    width: 100%;
+    max-height: inherit;
+}
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+    bottom: 0px;
+    max-height: 100%;
+}
+
+.main-text h1 {
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.socialThumb {
+    width: 50px;
+    margin: 1em;
+}
