@@ -1,9 +1,159 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Roll Trekker Travel Agency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="A fantastical travel agency">
+    <meta name="keywords" content="DnD, Dungeons and Dragons, Adventure, Party">
+
+    <!-- Google @import Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Della+Respira|Raleway|Pacifico|Merienda|Eczar|Gentium+Basic|Proza+Libre|Arizonia');
+    </style>
+   
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="logo rollTrekkers mr-0"><strong>RollTrekkers</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav  ml-auto fill">
+                <a class="nav-item nav-link" href="#adventures">Adventures</a>
+                <a class="nav-item nav-link" href="#rollTrekDif">The RollTrekker Difference</a>
+                <a class="nav-item nav-link" href="#book">Book Today</a>
+            </div>
+            </div>
+        </nav><!-- /navbar -->
+       
+    
+    <main>
+        <!--carousel-->
+        <div class="caroWrapper">
+            <div id="locationsCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000" data-wrap="true">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" id="caroImg" src="img/slide1Castle.jpg" alt="Castle on a forested hill with cloudy sky">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slide2Coast.jpg" alt="Fantastical coastline with large single rock and setting sun">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slide3Map.jpg" alt="Map with compass">
+                    </div>
+                    </div>
+            </div>
+            <div class="container-fluid main-text flex align-items-center pr-0" id="overlay">
+                    <div>
+                        <h1>
+                            <strong>Your Destiny Awaits</strong></h1>
+                        <h3>
+                            <i>Let us take you there</i>
+                        </h3>
+                    </div>
+            </div>
+        </div>
+        <!--/carousel-->
+
+<!-- Adventures Section -->
+        <div class="container-fluid chooseAdv flex section" id="adventures">
+            <div class="container-fluid wrapper">
+                <div class="container-fluid mainTitle">
+                    <span class="heading"><strong>How do you roll?</strong></span>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 adv1 thumbnail">
+                        
+                        <img class="choice img-fluid" src="img/city.jpg" alt="City at night with snow and lights on">
+                        <div class="caption">
+                            <a href="city.html"><p>City Intrigue</p></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 adv2 thumbnail">
+                        <img class="choice img-fluid" src="img/dungeon.jpg" alt="Dungeon door">
+                        <div class="caption">
+                                <a href="city.html"><p>Dungeon Crawl</p></a>
+                            </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 adv3 thumbnail">
+                        <img class="choice img-fluid" src="img/world.jpg" alt="Scenic view with mountains">
+                        <div class="caption">
+                                <a href="city.html"><p>World Traveler</p></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- RollTrekker Difference Section -->
+        <div class="container-fluid flex section"  id="rollTrekDif">
+            <div class="row">
+                <div class="col col-12 rollTrekkers">
+                    <span class="heading"><strong>The RollTrekkers Difference</strong></span>
+                    <img class="img-fluid mdHide" style="border-radius: 5px" src="img/sword.jpg" alt="Hand holding sword into light"></img>
+                </div>
+                <div class="col col-12 col-md-6 whyUs">
+                    <h2>Why travel with us?</h2>
+                    <p>Here are some words that are witty and will definitely inspire trust and admiration in our abilities. The experience we have to offer is exactly what you are looking for and we are the best!</p>
+                    <p>Don't even think that you will be able to find a better party than us. I don't know how much more I am going to have to say before you just buy a dang tour already. Here are some more words that are filling up this space and are very convincing and enticing.</p>
+                    <p>5-foot step ability ability decrease air subtype checked cold subtype conjuration medium miniature figure move action nonlethal damage scalykind domain slime domain stable tiny transmutation unconscious wizard. Acid effects burrow cover enemy fine free action melee weapon natural armor bonus pinned saving throw spell failure.</p>
+                </div>
+                <div class="col col-md-6 whyUsImg">
+                    <img class="img-fluid" style="border-radius: 5px" src="img/sword.jpg" alt="Hand holding sword into light">
+                </div>
+            </div>
+        </div>
+ <!-- Book Now section -->
+        <div class="jumbotron bookNow section" id="book">
+                <span>The first step of your journey is to BOOK TODAY!</span>
+                <hr class="boldLine">
+                <p>Our usual price is 20 gold per week per party member plus incidentals. An excellent deal for the skills and experience offered.</p>
+                <p><i>Spoils and rewards will be divided according to agreements reached during venture.</i></p>
+                <div class="container-fluid row justify-content-md-center">
+                    <div class="col col-12">
+                        <h2>Do we have an agreement?</h2>
+                    </div>
+                    <div class="col col-12 col-md-5">
+                        <button type="button" class="btn btn-success btn-lg bookBtns" data-toggle="modal" data-target="#">Accept</button>
+                    </div>
+                    <div class="col col-12 col-md-5">
+                        <button type="button" class="btn btn-secondary btn-lg bookBtns" data-toggle="modal" data-target="#">Haggle</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <hr class="my-4">
+    
+    <div class="bottomNav flex">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav flex">
+                    <li class="nav-item">
+                        <a href="https://facebook.com" target="_blank"><img class="socialThumb" src="img/Social/facebook.png" alt="Facebook logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://pinterest.com" target="_blank"><img class="socialThumb" src="img/Social/pinterest.png" alt="Pinterest logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com" target="_blank"><img class="socialThumb" src="img/Social/twitter.png" alt="Twitter logo"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 copyright">
+                <small>&copy; 2018 RollTrekkers </small>
+            </div>
+        </div><!-- /footer -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  
+    <script src="js/app.js"></script>
 </body>
 </html>
