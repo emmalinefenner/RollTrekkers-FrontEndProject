@@ -77,9 +77,10 @@
 .main-text h3 {
     font-family: 'Proza Libre', sans-serif;
 }
-/* offset to compensate for the size of the fixed navbar */
+
 .section {
-    padding-top: 64px;
+    padding-top: 64px; /*offset to compensate for the size of the fixed navbar*/
+    padding-bottom: 40px;
 }
 /* choose adventure section */
 .chooseAdv {
@@ -159,6 +160,7 @@ p {
 
 .jumbotron .col h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .boldLine {
@@ -241,6 +243,11 @@ p {
 
 .mainImg {
     width: 100%;
+}
+
+/* Haggle Modal */
+.skills {
+    text-align: center;
 }
 
   /* Media Queries */
