@@ -65,7 +65,7 @@
 <!-- Adventures Section -->
         <div class="container-fluid flex section" id="chooseAdv">
             <div class="container-fluid">
-                <div class="container-fluid" id=" mainTitle">
+                <div class="container-fluid" id="mainTitle">
                     <span class="heading"><strong>How do you roll?</strong></span>
                 </div>
                 <div class="row">
@@ -97,7 +97,7 @@
             <div class="row">
                 <div class="col col-12 rollTrekkers">
                     <span class="heading"><strong>The RollTrekkers Difference</strong></span>
-                    <img class="img-fluid" id="mdHide" style="border-radius: 5px" src="img/sword.jpg" alt="Hand holding sword into light"></img>
+                    <img class="img-fluid" id="mdHide" style="border-radius: 5px" src="img/sword.jpg" alt="Hand holding sword into light">
                 </div>
                 <div class="col col-12 col-md-6" id="whyUs">
                     <h2>Why travel with us?</h2>
@@ -154,7 +154,7 @@
     </div><!-- /footer -->
 
   <!-- Haggle Modal -->
-  <div class="modal fade" id="haggleModal" tabindex="-1" role="dialog" aria-labelledby="hagglingModal" aria-hidden="true">
+  <div class="modal fade" id="haggleModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -167,7 +167,7 @@
             <!-- inserted by jQuery during haggling -->
         </div>
         <div class="modal-body">
-         <div class="container-fluid haggle">
+         <div class="container-fluid" id="haggle">
              <div class="row">
                 <div class="col-12">
                     <h1>Choose your greatest skill:</h1>
@@ -204,8 +204,8 @@
                         <h1>Enter your skills modifier and your counter offer:</h1>
                     </div>
                     <div class="input-group flex">
-                        <input type="number" id="hagInpt" class="modifier" placeholder="Modifier Number" data-toggle="tooltip" title="Numbers Only" aria-label="First name" class="form-control">
-                        <input type="number" id="hagInpt" class="offer" placeholder="#Gold/wk per member" data-toggle="tooltip" title="Numbers Only" aria-label="Last name" class="form-control">
+                        <input type="number" id="modifier" placeholder="Modifier Number" data-toggle="tooltip" title="Numbers Only" aria-label="First name" class="form-control">
+                        <input type="number" id="offer" placeholder="#Gold/wk per member" data-toggle="tooltip" title="Numbers Only" aria-label="Last name" class="form-control">
                     </div>
                 </div>
          </div>
@@ -218,7 +218,7 @@
 </div>
 
     <!-- Accept Price Modal -->
-    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptPrice" aria-hidden="true">
+    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
