@@ -77,9 +77,10 @@
 .main-text h3 {
     font-family: 'Proza Libre', sans-serif;
 }
-/* offset to compensate for the size of the fixed navbar */
+
 .section {
-    padding-top: 64px;
+    padding-top: 64px; /*offset to compensate for the size of the fixed navbar*/
+    padding-bottom: 40px;
 }
 /* choose adventure section */
 .chooseAdv {
@@ -159,6 +160,7 @@ p {
 
 .jumbotron .col h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .boldLine {
@@ -180,6 +182,42 @@ p {
 
 .copyright {
     text-align: center;
+}
+
+/* Haggle Modal */
+#haggleModal h1,
+#acceptModal {
+    font-size: 1.5em;
+}
+
+.alert {
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    z-index: 2000;
+}
+
+.rowBtns {
+    display: none;
+}
+
+.modal-header {
+    background-color: green;
+    color: white;
+}
+
+.skills,
+.modFooter {
+    margin-bottom: 30px;
+}
+
+.skills {
+    text-align: center;
+}
+
+#hagBtn,
+.rollDie {
+    min-width: 190px;
 }
 
 /* navbar hover effect - I changed the color but this code is from https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -243,8 +281,22 @@ p {
     width: 100%;
 }
 
-  /* Media Queries */
 
+  /* Media Queries */
+@media only screen and (min-width: 450px) {
+    .rowBtns {
+        display: inline-block;
+        font-size: 0;
+    }
+
+    .rowBtns input {
+        font-size: 1rem;
+    }
+
+    .colBtns {
+        display: none;
+    }
+ }
   /* sm */
 @media only screen and (min-width: 576px) {
 
@@ -261,12 +313,20 @@ p {
    .choice {
        border-radius: 100%;
    }
-
+    
    .btn-block {
         width: inherit;
    }
 
-   
+   .colBtns {
+       display: none;
+   }
+
+   #haggleModal h1 {
+    font-size: 2em;
+}
+
+
 }
 /* md */
 @media only screen and (min-width: 768px) {
@@ -292,7 +352,7 @@ p {
         display: inline-block;
         padding-top: 40px;
     }
-    
+
 }
 /* lg */
 @media only screen and (min-width: 992px) {
@@ -304,10 +364,7 @@ p {
     .main-text h3 {
         font-size: 3em;
     }
-
-    .section {
-        /* height: 90vh; */
-    }
+    
     .heading {
         font-size: 4em;
     }
