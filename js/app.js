@@ -1,4 +1,8 @@
-
+// scroll to top of page on refresh
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
 // add class "active" to selected nav item to indicate location
 $(function(){
     $('.navbar a').click(function () {

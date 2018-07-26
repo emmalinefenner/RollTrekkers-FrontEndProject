@@ -35,8 +35,15 @@
 
 /* carousel */
 
-.caroWrapper {
+.caroWrapper,
+.back {
     position: relative;
+}
+
+.caroWrapper,
+.back,
+.carousel-item img,
+.mainImg {
     min-height: 200px;
 }
 
@@ -44,15 +51,12 @@
     z-index: 0;
 }
 
-.carousel-item {
+.carousel-item,
+.mainImg {
     width: 100%;
     max-height: inherit;
-    min-height: 200px;
 }
 
-.carousel-item img {
-    min-height: 200px;
-}
 
 .flex {
     display: flex;
@@ -88,7 +92,8 @@
 }
 
 .chooseAdv,
-.chooseAdv p {
+.chooseAdv p,
+.modal-title {
     font-family: 'Merienda', Georgia, 'Times New Roman', Times, serif;
 }
 .mainTitle {
@@ -150,8 +155,13 @@ p {
 .bookNow {
     background-image: url("../img/treasure-map.jpg");
     background-size: cover;
-    font-weight: bold;
-    font-family: 'Eczar', serif;   
+    font-weight: bold;   
+}
+
+.bookNow,
+#haggleModal h1,
+#acceptModal h1 {
+    font-family: 'Eczar', serif;
 }
 
 .bookNow span {
@@ -185,8 +195,13 @@ p {
 }
 
 /* Haggle Modal */
+.close {
+    min-width:44px;
+    min-height: 44px;
+}
+
 #haggleModal h1,
-#acceptModal {
+#acceptModal h1 {
     font-size: 1.5em;
 }
 
@@ -215,9 +230,27 @@ p {
     text-align: center;
 }
 
-#hagBtn,
+#hagInpt,
 .rollDie {
     min-width: 190px;
+    min-height: 44px;
+}
+
+#hagInpt {
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+
+/* Styles for city.html ** Choose Adventure links */
+
+
+/* .mainImg {
+    width: 100%;
+} */
+
+.construction h1,
+.construction h3 {
+    font-family: 'Special Elite', serif;
 }
 
 /* navbar hover effect - I changed the color but this code is from https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -275,12 +308,6 @@ p {
     }
   }
 /* end nav hover effect */
-
-
-.mainImg {
-    width: 100%;
-}
-
 
   /* Media Queries */
 @media only screen and (min-width: 450px) {
@@ -364,7 +391,7 @@ p {
     .main-text h3 {
         font-size: 3em;
     }
-    
+
     .heading {
         font-size: 4em;
     }
