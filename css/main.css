@@ -207,7 +207,8 @@ p {
 
 .alert {
     position: absolute;
-    top: 10%;
+    bottom: 6%;
+    left: 10%;
     background-color: white;
     z-index: 2000;
 }
