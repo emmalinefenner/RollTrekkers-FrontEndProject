@@ -26,9 +26,9 @@ var button = $('.rollDie');
 $(".rollDie").click(function() {
     
     // validate Modifier and Offer Input 
-    var modifier = $(".modifier").val();
-    var offer = $(".offer").val();
-    if($(".offer").val().trim().length == 0) {
+    var modifier = $("#modifier").val();
+    var offer = $("#offer").val();
+    if($("#offer").val().trim().length == 0) {
         $('#popup').html(
             '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h1>Where is your offer?</h1><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>' 
         );
@@ -36,12 +36,12 @@ $(".rollDie").click(function() {
         $('#popup').html(
             '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h1>That modifier is suspiciously high. 10 is the most we have heard of. Honesty is the best policy!</h1><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>' 
         );
-        $(".modifier").val("");
+        $("#modifier").val("");
     } else if(offer<10) {
         $('#popup').html(
             '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h1>Cheapskate alert! No Deal.</h1><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>' 
         );
-        $(".offer").val("");
+        $("#offer").val("");
     } else {
         // var 'die' simulates rolling a 20 sided die
         var die = {
@@ -64,17 +64,17 @@ $(".rollDie").click(function() {
                 '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h1>Very convincing! We have a deal!</h1><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>' 
             );
             // clear radios and inputs
-            $(".modifier").val("");
-            $(".offer").val("");
-            $('.haggle label').each(function() { $(this).removeClass('active');});
+            $("#modifier").val("");
+            $("#offer").val("");
+            $('#haggle label').each(function() { $(this).removeClass('active');});
         } else {
             $('#popup').html(
                 '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h1>Sorry, We are not convinced. No Deal.</h1><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>' 
             );
             // clear radios and inputs
-            $(".modifier").val("");
-            $(".offer").val("");
-            $('.haggle label').each(function() { $(this).removeClass('active');});
+            $("#modifier").val("");
+            $("#offer").val("");
+            $('#haggle label').each(function() { $(this).removeClass('active');});
         }
     }
 })
