@@ -112,14 +112,14 @@
         <div class="jumbotron bookNow section" id="book">
                 <span>The first step of your journey is to BOOK TODAY!</span>
                 <hr class="boldLine">
-                <p>Our usual price is 20 gold per week per party member plus incidentals. An excellent deal for the skills and experience offered.</p>
+                <p>Our usual price is <span>20</span> gold per week per party member plus incidentals. An excellent deal for the skills and experience offered.</p>
                 <p><i>Spoils and rewards will be divided according to agreements reached during venture.</i></p>
                 <div class="container-fluid row justify-content-md-center">
                     <div class="col col-12">
                         <h2>Do we have an agreement?</h2>
                     </div>
                     <div class="col col-12 col-md-5">
-                        <button type="button" class="btn btn-success btn-lg bookBtns" data-toggle="modal" data-target="#">Accept</button>
+                        <button type="button" class="btn btn-success btn-lg bookBtns" data-toggle="modal" data-target="#acceptModal">Accept</button>
                     </div>
                     <div class="col col-12 col-md-5">
                         <button type="button" class="btn btn-secondary btn-lg bookBtns" data-toggle="modal" data-target="#haggleModal">Haggle</button>
@@ -161,6 +161,9 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+        <div class="popup">
+            <!-- inserted by jQuery during haggling -->
+        </div>
         <div class="modal-body">
          <div class="container-fluid haggle">
              <div class="row">
@@ -168,7 +171,20 @@
                     <h1>Choose your greatest skill:</h1>
                 </div>
                 <div class="col-12 skills">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <!-- hidden in sm screens -->
+                    <div class="btn-group-vertical btn-group-toggle colBtns" data-toggle="buttons">
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Intimidation
+                        </label>
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Persuasion
+                        </label>
+                        <label class="btn btn-secondary btn-lg">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Deception
+                        </label>
+                    </div>
+                    <!-- hidden in xs screens -->
+                    <div class="btn-group btn-group-toggle rowBtns" data-toggle="buttons">
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option1" autocomplete="off"> Intimidation
                         </label>
@@ -178,26 +194,47 @@
                         <label class="btn btn-secondary">
                           <input type="radio" name="options" id="option3" autocomplete="off"> Deception
                         </label>
-                      </div>
+                    </div>
                 </div>
              </div>
              <div class="modAndOffer">
                     <div class="col-12">
-                        <h2>Enter your skills modifier and your counter offer:</h2>
+                        <h1>Enter your skills modifier and your counter offer:</h1>
                     </div>
-                    <div class="input-group">
-                        <input type="text" placeholder="Modifier Number" aria-label="First name" class="form-control">
-                        <input type="text" placeholder="Gold/week per member" aria-label="Last name" class="form-control">
-                      </div>
+                    <div class="input-group flex">
+                        <input type="number" id="hagBtn" class="modifier" placeholder="Modifier Number" data-toggle="tooltip" title="Numbers Only" aria-label="First name" class="form-control">
+                        <input type="number" id="hagBtn" class="offer" placeholder="#Gold/wk per member" data-toggle="tooltip" title="Numbers Only" aria-label="Last name" class="form-control">
+                    </div>
                 </div>
          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-lg rollDie" data-dismiss="modal">Roll the Die!</button>
+        <div class="flex modFooter">
+          <button type="button" class="btn btn-secondary btn-lg rollDie">Roll the Die!</button>
         </div>
       </div>
     </div>
-  </div>
+</div>
+
+    <!-- Accept Price Modal -->
+    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptPrice" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="acceptModalTitle">Congratulations!</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1>We have a deal! Our couriers will be in touch with final arrangements and dates.</h1>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
