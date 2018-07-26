@@ -35,13 +35,13 @@
 
 /* carousel */
 
-.caroWrapper,
-.back {
+#caroWrapper,
+#backImg {
     position: relative;
 }
 
-.caroWrapper,
-.back,
+#caroWrapper,
+#backImg,
 .carousel-item img,
 .mainImg {
     min-height: 200px;
@@ -64,7 +64,7 @@
     justify-content: center;
 }
 
-.main-text {
+.overlay {
     position: absolute;
     top: 64px;
     width: 100%;
@@ -73,12 +73,12 @@
     bottom: 0px;
 }
 
-.main-text h1 {
+.overlay h1 {
     font-size: 2em;
     font-family: 'Arizonia', cursive;
 }
 
-.main-text h3 {
+.overlay h3 {
     font-family: 'Proza Libre', sans-serif;
 }
 
@@ -87,21 +87,21 @@
     padding-bottom: 40px;
 }
 /* choose adventure section */
-.chooseAdv {
+#chooseAdv {
     padding-bottom: 30px;
 }
 
-.chooseAdv,
-.chooseAdv p,
+#chooseAdv,
+#chooseAdv p,
 .modal-title {
     font-family: 'Merienda', Georgia, 'Times New Roman', Times, serif;
 }
-.mainTitle {
+#mainTitle {
     text-align: center;
     color:#373D3F;
 }
 
-.mainTitle,
+#mainTitle,
 .rollTrekkers span {
     margin-bottom: 20px;
 }
@@ -128,7 +128,7 @@
     color:white;
 }
 
-.chooseAdv a:hover {
+#chooseAdv a:hover {
     color: grey;
 }
 /* RollTrekker Difference */
@@ -137,7 +137,7 @@
     text-align: center;
 }
 
-.whyUs {
+#whyUs {
     padding: 20px;
     text-align: left;
 }
@@ -146,25 +146,25 @@ p {
     font-family: 'Proza Libre', sans-serif;
 }
 
-.whyUsImg {
+#whyUsImg {
     display: none;
 }
 
 /* Book Now */
 
-.bookNow {
+#book {
     background-image: url("../img/treasure-map.jpg");
     background-size: cover;
     font-weight: bold;   
 }
 
-.bookNow,
+#book,
 #haggleModal h1,
 #acceptModal h1 {
     font-family: 'Eczar', serif;
 }
 
-.bookNow span {
+#book span {
     font-size: 2em;
 }
 
@@ -190,7 +190,7 @@ p {
     margin: 1em;
 }
 
-.copyright {
+#copyright {
     text-align: center;
 }
 
@@ -212,7 +212,7 @@ p {
     z-index: 2000;
 }
 
-.rowBtns {
+#rowBtns {
     display: none;
 }
 
@@ -222,7 +222,7 @@ p {
 }
 
 .skills,
-.modFooter {
+#modFooter {
     margin-bottom: 30px;
 }
 
@@ -311,33 +311,33 @@ p {
 
   /* Media Queries */
 @media only screen and (min-width: 450px) {
-    .rowBtns {
+    #rowBtns {
         display: inline-block;
         font-size: 0;
     }
 
-    .rowBtns input {
+    #rowBtns input {
         font-size: 1rem;
     }
 
-    .colBtns {
+    #colBtns {
         display: none;
     }
  }
   /* sm */
 @media only screen and (min-width: 576px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 3em;
     }
    .caption {
        font-size : 2em;
    }
-    .adv3 {
+    #adv3 {
        margin: 0 auto;
    }
 
-   .choice {
+   .oval {
        border-radius: 100%;
    }
     
@@ -345,7 +345,7 @@ p {
         width: inherit;
    }
 
-   .colBtns {
+   #colBtns {
        display: none;
    }
 
@@ -358,24 +358,24 @@ p {
 /* md */
 @media only screen and (min-width: 768px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 4em;
     }
 
     .caption,
-    .bookNow span {
+    #book span {
         font-size: 3em;
     }
 
-    .mainTitle {
+    #mainTitle {
         margin-bottom: 30px;
     }
 
-    .mdHide {
+    #mdHide {
         display: none;
     }
 
-    .whyUsImg {
+    #whyUsImg {
         display: inline-block;
         padding-top: 40px;
     }
@@ -384,11 +384,11 @@ p {
 /* lg */
 @media only screen and (min-width: 992px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 6em;
     }
 
-    .main-text h3 {
+    .overlay h3 {
         font-size: 3em;
     }
 
@@ -396,11 +396,11 @@ p {
         font-size: 4em;
     }
 
-    .whyUs {
+    #whyUs {
         padding-left: 40px;
     }
 
-    .bookNow p {
+    #book p {
         font-size: 1.5em;
     }
 
