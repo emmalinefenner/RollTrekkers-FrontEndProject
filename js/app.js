@@ -15,7 +15,13 @@ $(function(){
 $(document).on('click','.navbar-collapse',function(e) {
     if( $(e.target).is('a:not(".dropdown-toggle")') ) {
         $(this).collapse('hide');
+        $('.navbar').css("background-color", "rgb(105,105,105, .5)");
     }
+});
+
+$('.navbar-toggler').click(function() {
+    $('.navbar').css("background-color", "rgb(105,105,105)");
+
 });
 
 
