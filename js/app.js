@@ -85,9 +85,11 @@ $(".rollDie").click(function() {
         }
     }
 })
-
-
+    // clear alert div if modal is closed before closing alerts
   
-  
+    $('.close').click(function() {
+        $('#popup').html('');
+    
+    });
   
  
