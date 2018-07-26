@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="A fantastical travel agency">
     <meta name="keywords" content="DnD, Dungeons and Dragons, Adventure, Party">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 
     <!-- Google @import Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Della+Respira|Raleway|Knewave');
+        @import url('https://fonts.googleapis.com/css?family=Della+Respira|Special+Elite');
     </style>
    
 </head>
@@ -17,14 +19,14 @@
     
     <!--navbar-->
     <nav class="navbar navbar-expand-md fixed-top">
-        <a class="rollTrekkers mr-0"><strong>RollTrekkers</strong></a>
+        <a class="logo rollTrekkers mr-0"><strong>RollTrekkers</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav  ml-auto fill">
             <a class="nav-item nav-link home" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="index.html#adventures">Adventures</a>
+            <a class="nav-item nav-link" href="index.html#chooseAdv">Adventures</a>
             <a class="nav-item nav-link" href="index.html#rollTrekDif">The RollTrekker Difference</a>
             <a class="nav-item nav-link" href="index.html#book">Book Today</a>
         </div>
@@ -32,35 +34,47 @@
     </nav><!-- /navbar -->
     <main>
        
-        
+        <div class="container-fluid" id="backImg">
             <div class="container-fluid p-0">
                 <img class="img-fluid mainImg" src="img/city-page/city-view.jpg" alt="City rooftops">
             </div>
+            <div class="container-fluid main-text flex align-items-center pr-0 construction" id="overlay">
+                    <div>
+                        <h1>
+                            <strong>Under Construction!</strong></h1>
+                        <h3>
+                            <i>Pardon our mess.</i>
+                        </h3>
+                    </div>
+            </div>
+        </div>
          
         
     </main>
-    <footer>
-        <!-- footer -->
-        <div class="row">
-                <div class="col-sm-12">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="https://facebook.com" target="_blank"><img class="socialThumb" src="img/Social/facebook.png"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://pinterest.com" target="_blank"><img class="socialThumb" src="img/Social/pinterest.png"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com" target="_blank"><img class="socialThumb" src="img/Social/twitter.png"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <small>&copy; 2018 RollTrekkers </small>
-                </div>
-        </div><!-- /footer -->
+
+    <hr class="my-4">
     
-    </footer>
+    <div class="flex">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav flex">
+                    <li class="nav-item">
+                        <a href="https://facebook.com" target="_blank"><img class="socialThumb" src="img/Social/facebook.png" alt="Facebook logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://pinterest.com" target="_blank"><img class="socialThumb" src="img/Social/pinterest.png" alt="Pinterest logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com" target="_blank"><img class="socialThumb" src="img/Social/twitter.png" alt="Twitter logo"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12" id="copyright">
+                <small>&copy; 2018 RollTrekkers </small>
+            </div>
+        </div>
+    </div><!-- /footer -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  

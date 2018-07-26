@@ -35,8 +35,15 @@
 
 /* carousel */
 
-.caroWrapper {
+#caroWrapper,
+#backImg {
     position: relative;
+}
+
+#caroWrapper,
+#backImg,
+.carousel-item img,
+.mainImg {
     min-height: 200px;
 }
 
@@ -44,15 +51,12 @@
     z-index: 0;
 }
 
-.carousel-item {
+.carousel-item,
+.mainImg {
     width: 100%;
     max-height: inherit;
-    min-height: 200px;
 }
 
-.carousel-item img {
-    min-height: 200px;
-}
 
 .flex {
     display: flex;
@@ -60,7 +64,7 @@
     justify-content: center;
 }
 
-.main-text {
+.overlay {
     position: absolute;
     top: 64px;
     width: 100%;
@@ -69,12 +73,12 @@
     bottom: 0px;
 }
 
-.main-text h1 {
+.overlay h1 {
     font-size: 2em;
     font-family: 'Arizonia', cursive;
 }
 
-.main-text h3 {
+.overlay h3 {
     font-family: 'Proza Libre', sans-serif;
 }
 
@@ -83,20 +87,21 @@
     padding-bottom: 40px;
 }
 /* choose adventure section */
-.chooseAdv {
+#chooseAdv {
     padding-bottom: 30px;
 }
 
-.chooseAdv,
-.chooseAdv p {
+#chooseAdv,
+#chooseAdv p,
+.modal-title {
     font-family: 'Merienda', Georgia, 'Times New Roman', Times, serif;
 }
-.mainTitle {
+#mainTitle {
     text-align: center;
     color:#373D3F;
 }
 
-.mainTitle,
+#mainTitle,
 .rollTrekkers span {
     margin-bottom: 20px;
 }
@@ -123,7 +128,7 @@
     color:white;
 }
 
-.chooseAdv a:hover {
+#chooseAdv a:hover {
     color: grey;
 }
 /* RollTrekker Difference */
@@ -132,7 +137,7 @@
     text-align: center;
 }
 
-.whyUs {
+#whyUs {
     padding: 20px;
     text-align: left;
 }
@@ -141,20 +146,25 @@ p {
     font-family: 'Proza Libre', sans-serif;
 }
 
-.whyUsImg {
+#whyUsImg {
     display: none;
 }
 
 /* Book Now */
 
-.bookNow {
+#book {
     background-image: url("../img/treasure-map.jpg");
     background-size: cover;
-    font-weight: bold;
-    font-family: 'Eczar', serif;   
+    font-weight: bold;   
 }
 
-.bookNow span {
+#book,
+#haggleModal h1,
+#acceptModal h1 {
+    font-family: 'Eczar', serif;
+}
+
+#book span {
     font-size: 2em;
 }
 
@@ -180,13 +190,18 @@ p {
     margin: 1em;
 }
 
-.copyright {
+#copyright {
     text-align: center;
 }
 
 /* Haggle Modal */
+.close {
+    min-width:44px;
+    min-height: 44px;
+}
+
 #haggleModal h1,
-#acceptModal {
+#acceptModal h1 {
     font-size: 1.5em;
 }
 
@@ -197,7 +212,7 @@ p {
     z-index: 2000;
 }
 
-.rowBtns {
+#rowBtns {
     display: none;
 }
 
@@ -207,7 +222,7 @@ p {
 }
 
 .skills,
-.modFooter {
+#modFooter {
     margin-bottom: 30px;
 }
 
@@ -215,9 +230,27 @@ p {
     text-align: center;
 }
 
-#hagBtn,
+#hagInpt,
 .rollDie {
     min-width: 190px;
+    min-height: 44px;
+}
+
+#hagInpt {
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+
+/* Styles for city.html ** Choose Adventure links */
+
+
+/* .mainImg {
+    width: 100%;
+} */
+
+.construction h1,
+.construction h3 {
+    font-family: 'Special Elite', serif;
 }
 
 /* navbar hover effect - I changed the color but this code is from https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -276,41 +309,35 @@ p {
   }
 /* end nav hover effect */
 
-
-.mainImg {
-    width: 100%;
-}
-
-
   /* Media Queries */
 @media only screen and (min-width: 450px) {
-    .rowBtns {
+    #rowBtns {
         display: inline-block;
         font-size: 0;
     }
 
-    .rowBtns input {
+    #rowBtns input {
         font-size: 1rem;
     }
 
-    .colBtns {
+    #colBtns {
         display: none;
     }
  }
   /* sm */
 @media only screen and (min-width: 576px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 3em;
     }
    .caption {
        font-size : 2em;
    }
-    .adv3 {
+    #adv3 {
        margin: 0 auto;
    }
 
-   .choice {
+   .oval {
        border-radius: 100%;
    }
     
@@ -318,7 +345,7 @@ p {
         width: inherit;
    }
 
-   .colBtns {
+   #colBtns {
        display: none;
    }
 
@@ -331,24 +358,24 @@ p {
 /* md */
 @media only screen and (min-width: 768px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 4em;
     }
 
     .caption,
-    .bookNow span {
+    #book span {
         font-size: 3em;
     }
 
-    .mainTitle {
+    #mainTitle {
         margin-bottom: 30px;
     }
 
-    .mdHide {
+    #mdHide {
         display: none;
     }
 
-    .whyUsImg {
+    #whyUsImg {
         display: inline-block;
         padding-top: 40px;
     }
@@ -357,23 +384,23 @@ p {
 /* lg */
 @media only screen and (min-width: 992px) {
 
-    .main-text h1 {
+    .overlay h1 {
         font-size: 6em;
     }
 
-    .main-text h3 {
+    .overlay h3 {
         font-size: 3em;
     }
-    
+
     .heading {
         font-size: 4em;
     }
 
-    .whyUs {
+    #whyUs {
         padding-left: 40px;
     }
 
-    .bookNow p {
+    #book p {
         font-size: 1.5em;
     }
 
