@@ -4,7 +4,7 @@
 ```
 A brief description of your project
 
-My project is a webpage for a role-playing (D&D) travel agency, RollTrekkers. This company would provide skilled individuals to fill out an adventuring party and guide the customer in their fantastical and destiny fulfilling journey. 
+My project is a webpage for a travel agency that exists within the world(s) of Dungeons and Dragons and that type of fantasy role-playing: RollTrekkers. This company would provide skilled individuals to fill out an adventuring party and guide the customer in their fantastical and destiny fulfilling journey. 
 There are links to three different kind of adventures to choose from, but this connecting page is only a placeholder and does not contain much content or functionality other than returning to main page. 
 In the Book Now section, there is a “haggle” button that opens a modal. This allows the customer to choose their “skill” and add a modifier to haggle for a better price than 20 gold per person per week. JQuery runs this exchange.
 ```
