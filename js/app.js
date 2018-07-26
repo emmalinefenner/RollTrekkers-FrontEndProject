@@ -15,10 +15,11 @@ $(function(){
 $(document).on('click','.navbar-collapse',function(e) {
     if( $(e.target).is('a:not(".dropdown-toggle")') ) {
         $(this).collapse('hide');
-        $('.navbar').css("background-color", "rgb(105,105,105, .5)");
+        $('.navbar').css("background-color", "rgb(105,105,105, .5)"); //return navbar background to transparent on click
     }
 });
 
+// change background of navbar to opaque when hamburger menu drops down
 $('.navbar-toggler').click(function() {
     $('.navbar').css("background-color", "rgb(105,105,105)");
 
