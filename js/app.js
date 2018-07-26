@@ -89,7 +89,6 @@ $(".rollDie").click(function() {
   
     $('.close').click(function() {
         $('#popup').html('');
-    
     });
   
  
