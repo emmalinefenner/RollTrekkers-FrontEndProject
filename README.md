@@ -17,27 +17,28 @@ The class(es) I created are:
 1.	logo
 ..sets font-size and padding of the logo in navbar 
 
-2.	rollTrekkers!!!!! Maybe put this rule into logo
+2. rollTrekkers
+..sets font for logo and RollTrekkers Difference section
 
 3.	main-text – change to “overlay”
 ..sets absolute position of text on top of the carousel and the top image in city.html
 
 4. flex
 ..sets display:flex and centers contained items both vertically and horizontally
-..****put which ones
 
-5.	chooseAdv ***change to id and create new class for the font
+5. chooseAdv
+..sets font for Adventure Section
 
 6.	section
 ..sets a padding-top to compensate for the fixed navbar and adds padding-bottom to each separate section on main page: Adventure, Rolltrekkers Difference, and Book Now
 
 7.	heading
-..sets font-size for headings in Adventure, RollTrekkers Difference****insert others
+..sets font-size for headings in Adventure, RollTrekkers Difference
 
 8.	thumbnail 
 ..sets relative position and display for images in Adventure section. Works with caption class to have images with text over them.
 
-9. choice****change to oval
+9. oval
 ..sets border radius to have oval images. In Adventure section.
 
 10.	caption
@@ -54,7 +55,13 @@ The class(es) I created are:
 
 ## Custom JavaScript Functions
 ```
-The JavaScript function I created is the Haggle Function: 
+The JavaScript functions I created are:
+
+1. Dropdown Background-color Function:
+
+..changes navbar background-color to opaque when menu drops down to aid in ease of viewing nav items.
+
+2. the Haggle Function: 
 
 ..I did not explicitly name the function. I left it as an anonymous function in the click event, as it is specific and would not be used in another situation. 
 
@@ -63,6 +70,10 @@ The JavaScript function I created is the Haggle Function:
 ..When the inputs are satisfactory, the submit button simulates the rolling of a 20-sided die for both the customer and the Company. The Modifier is added to the customer’s roll, and if this is greater than the Company’s, a deal is reached. If not, no deal.
 
 ..The response messages are returned in a modified Bootstrap alert which has its html inserted by the function.
+
+3. Clear Alert Function:
+
+..clears the alert div if the haggle modal is closed without closing the alert.
 
 
 ```
