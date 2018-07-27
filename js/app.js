@@ -19,14 +19,14 @@ $(document).on('click','.navbar-collapse',function(e) {
     }
 });
 
-// change background of navbar to opaque when hamburger menu drops down
+// Dropdown Background-color Function: change background of navbar to opaque when hamburger menu drops down
 $('.navbar-toggler').click(function() {
     $('.navbar').css("background-color", "rgb(105,105,105)");
 
 });
 
 
-//****************Haggle App ****************
+//****************Haggle Function ****************
 
 
 var button = $('.rollDie');
